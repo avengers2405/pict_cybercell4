@@ -1,5 +1,5 @@
 import React from "react";
-// import Earth from "@/components/home_comp/earth"; 
+import Earth from "@/components/home_comp/earth"; 
 import WebClubUI from "@/components/home_comp/thingwedo"
 import NumbersThatMatter from "@/components/home_comp/numberthatmatter"
 import CyberHUBLanding from "@/components/home_comp/content"
@@ -10,7 +10,7 @@ const AboutPage: React.FC = () => {
   // console.log(window);
   return (
     <div>
-      {/* <Earth /> */}
+      <Earth />
       <div>
         <CyberHUBLanding/>
         <div className=" bg-white pb-20"><WebClubUI/></div>
