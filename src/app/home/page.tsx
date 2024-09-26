@@ -7,6 +7,7 @@ import EventsCarousel from "@/components/home_comp/event"
 
 
 const AboutPage: React.FC = () => {
+  // console.log(window);
   return (
     <div>
       <Earth />

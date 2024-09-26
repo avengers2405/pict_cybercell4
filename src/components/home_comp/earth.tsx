@@ -4,7 +4,7 @@ import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { PerspectiveCamera, Vector3, Scene } from "three";
 import { OrbitControls } from "@react-three/drei";
-import { Globe, GlobeConfig } from "@/components/ui/globe";
+// import { Globe, GlobeConfig } from "@/components/ui/globe";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 
@@ -90,21 +90,21 @@ for (let i = 0; i < numberOfConnections; i++) {
   });
 }
 
-const globeConfig: GlobeConfig = {
-  pointSize: 2,
-  atmosphereColor: "#ffffff",
-  showAtmosphere: true,
-  atmosphereAltitude: 0.1,
-  polygonColor: "rgba(255, 255, 255, 0.6)",
-  globeColor: "#1d072e",
-  emissive: "#004080",
-  emissiveIntensity: 0.2,
-  shininess: 0.9,
-  arcTime: 2500,
-  arcLength: 0.7,
-  rings: 2,
-  maxRings: 5,
-};
+// const globeConfig: GlobeConfig = {
+//   pointSize: 2,
+//   atmosphereColor: "#ffffff",
+//   showAtmosphere: true,
+//   atmosphereAltitude: 0.1,
+//   polygonColor: "rgba(255, 255, 255, 0.6)",
+//   globeColor: "#1d072e",
+//   emissive: "#004080",
+//   emissiveIntensity: 0.2,
+//   shininess: 0.9,
+//   arcTime: 2500,
+//   arcLength: 0.7,
+//   rings: 2,
+//   maxRings: 5,
+// };
 
 const Earth: React.FC = () => {
   const words = [
@@ -126,7 +126,7 @@ const Earth: React.FC = () => {
         <directionalLight color="#ffffff" position={new Vector3(-400, 100, 400)} />
         <directionalLight color="#ffffff" position={new Vector3(-200, 500, 200)} />
         <pointLight color="#ffffff" position={new Vector3(-200, 500, 200)} intensity={0.8} />
-        <Globe globeConfig={globeConfig} data={globeData} />
+        {/* <Globe globeConfig={globeConfig} data={globeData} /> */}
         <OrbitControls
           enablePan={false}
           enableZoom={false}
